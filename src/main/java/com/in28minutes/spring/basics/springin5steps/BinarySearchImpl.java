@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 //This is a bean
+//[DEBUG::Creating shared instance of singleton bean 'binarySearchImpl']
 @Component
 public class BinarySearchImpl {
 
@@ -14,6 +15,7 @@ public class BinarySearchImpl {
   private SortAlgorithm sortAlgorithm;
 
   //constructor
+  //[DEBUG::Autowiring (by type) from bean name 'binarySearchImpl' (via constructor) to bean named 'bubbleSortAlgorithm']
   public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
     super();
     this.sortAlgorithm = sortAlgorithm;

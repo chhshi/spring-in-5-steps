@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 //Component Scan: by default automatically scan the package that this Application is in
+//Application itself is a bean:  [DEBUG::Creating shared instance of singleton bean 'springIn5StepsApplication']
 @SpringBootApplication
 public class SpringIn5StepsApplication {
 
