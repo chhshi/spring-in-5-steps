@@ -1,9 +1,16 @@
 package com.in28minutes.spring.basics.springin5steps;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+//This is a bean
+@Component
 public class BinarySearchImpl {
 
 
   //Interface
+  //This is a dependency
+  @Autowired
   private SortAlgorithm sortAlgorithm;
 
   //constructor
