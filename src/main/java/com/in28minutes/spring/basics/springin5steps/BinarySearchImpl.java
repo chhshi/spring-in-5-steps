@@ -13,13 +13,28 @@ public class BinarySearchImpl {
   //This is a dependency
   @Autowired
   private SortAlgorithm sortAlgorithm;
+  /*
+  * 1) Contructor Injection / autowire  -------> Old days, this is mandatory
+  * 2) Setter Inject /autowire
+  * 3) No constructor & No Setter ----> Drawbacks: too easy to add dependencies, add too much dependencies.
+  *
+  * */
 
-  //constructor
+
+  /*
+  //constructor Injection
   //[DEBUG::Autowiring (by type) from bean name 'binarySearchImpl' (via constructor) to bean named 'bubbleSortAlgorithm']
   public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
     super();
     this.sortAlgorithm = sortAlgorithm;
   }
+  */
+
+  //Setter Injection
+  public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+    this.sortAlgorithm = sortAlgorithm;
+  }
+
 
 
   /*
